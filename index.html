@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font/fontawesome-free-6.0.0-web/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="giohang">
+        <a onclick="showcart();"><img src="images/cart.png"><span id="countsp">0</span></a>
+    </div>
+    <div id="showcart">
+        <table>
+            <tr>
+                <th>STT</th>
+                <th>Hình</th>
+                <th>Tên sản phẩm</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền ($)</th>
+            </tr>
+            <tbody id="mycart">
+
+            </tbody>
+            <tr>
+                <td><a href="thanhtoan.html"><button type="button" class="thanhtoan">Chốt đơn và thanh toán</button></a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="boxcenter">
+        <div class="row mb header">
+            <h1> SIÊU THỊ TRỰC TUYẾN</h1>
+        </div>
+
+        <div class="row mb menu">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="#">Giỏ hàng</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Góp ý</a></li>
+                <li><a href="#">Hỏi đáp</a></li>
+                <li><a href="dangki.html">Đăng ký</a></li>
+                <li><a href="dangnhap.html">Đăng nhập</a></li>
+            </ul>
+        </div>
+        <div class="row mb ">
+            <div class="row">
+                <div class="banner mb">
+                    <div class="slide">
+                        <div class="slide__img">
+                            <img id="img"src="images/banner1.jpg" alt="">
+                        </div>
+                        <i onclick="prev();"class="icon__left fa-solid fa-arrow-left"></i>
+                        <i onclick="next();" class="icon__right fa-solid fa-arrow-right"></i>
+                        <div id="slide__count">1/4</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="boxsp mr">
+                    <div class="row img"><img src="images/garmin.jpg" alt=""></div>
+                    <p>$<span>100</span></p>
+                    <a href="#">Đồng hồ garmin</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="images/casio.jpg" alt=""></div>
+                    <p>$<span>200</span></p>
+                    <a href="#">ĐỒng hồ casio</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp ">
+                    <div class="row img"><img src="images/lobini.jpg" alt=""></div>
+                    <p>$<span>100</span></p>
+                    <a href="#">Đồng hồ logini</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="images/pagini.jpg" alt=""></div>
+                    <p>$<span>400</span></p>
+                    <a href="#">Đồng hồ pagini</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="images/fenix 5.jpg" alt=""></div>
+                    <p>$<span>400</span></p>
+                    <a href="#">Đồng hồ fenix 5</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp ">
+                    <div class="row img"><img src="images/tissot.jpg" alt=""></div>
+                    <p>$<span>1000</span></p>
+                    <a href="#">Đồng Hồ tissot</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="images/gshock.png" alt=""></div>
+                    <p>$<span>200</span></p>
+                    <a href="#">Đồng hồ G-Shock</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="images/muller.png" alt=""></div>
+                    <p>$<span>120000</span></p>
+                    <a href="#">Đồng hồ muller</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp ">
+                    <div class="row img"><img src="images/rolex.webp" alt=""></div>
+                    <p>$<span>20000</span></p>
+                    <a href="#">Đồng hồ rolex</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/cart.js"></script>
+    <script>
+        document.getElementById("showcart").style.display="none";
+    </script>
+    
+</body>
+
+</html>
